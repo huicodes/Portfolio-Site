@@ -41,6 +41,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          file: ./web_server/Dockerfile
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/portfolioci:latest
